@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-white rounded-lg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#BCC1CA] rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-orange-400;
+}
+
+@layer components {
+  .fs-1 {
+    @apply !text-[calc(1.375rem_+_1.5vw)];
+  }
+  .fs-2 {
+    @apply !text-[calc(1.325rem_+_0.9vw)];
+  }
+
+  .fs-3 {
+    @apply !text-[calc(1.3rem_+_0.6vw)];
+  }
+
+  .fs-4 {
+    @apply !text-[calc(1.275rem_+_0.3vw)];
+  }
+
+  .fs-5 {
+    @apply !text-[calc(1.125rem_+_0.1vw)];
+  }
+
+  .fs-6 {
+    @apply !text-[1rem];
+  }
+}
+
+.font-size-1 {
+  font-size: clamp(12px, 2vw, 16px); /* Small */
+}
+
+.font-size-2 {
+  font-size: clamp(14px, 3vw, 18px); /* Medium-small */
+}
+
+.font-size-3 {
+  font-size: clamp(16px, 4vw, 20px); /* Medium */
+}
+
+.font-size-4 {
+  font-size: clamp(16px, 3vw, 24px); /* Large */
+}
+
+.font-size-5 {
+  font-size: clamp(20px, 6vw, 28px); /* Extra-large */
+}
+
+.font-size-6 {
+  font-size: clamp(24px, 7vw, 32px); /* XXL */
+}
